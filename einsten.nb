@@ -1,0 +1,191 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[      7661,        183]
+NotebookOptionsPosition[      7184,        166]
+NotebookOutlinePosition[      7574,        182]
+CellTagsIndexPosition[      7531,        179]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"w", "=", "1"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"steps", ",", "pts"}], "}"}], ",", 
+     RowBox[{
+      RowBox[{"steps", "=", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "a"}], " ", "w", " ", 
+          RowBox[{"AngleVector", "[", 
+           RowBox[{"90", " ", "Degree"}], "]"}]}], ",", 
+         RowBox[{"b", " ", "w", " ", 
+          RowBox[{"AngleVector", "[", 
+           RowBox[{"0", " ", "Degree"}], "]"}]}], ",", 
+         RowBox[{"b", " ", "w", " ", 
+          RowBox[{"AngleVector", "[", 
+           RowBox[{
+            RowBox[{"-", "60"}], " ", "Degree"}], "]"}]}], ",", 
+         RowBox[{"a", " ", "w", " ", 
+          RowBox[{"AngleVector", "[", 
+           RowBox[{"30", " ", "Degree"}], "]"}]}], ",", 
+         RowBox[{"2", " ", "a", " ", "w", " ", 
+          RowBox[{"AngleVector", "[", 
+           RowBox[{"90", " ", "Degree"}], "]"}]}], ",", 
+         RowBox[{"a", " ", "w", " ", 
+          RowBox[{"AngleVector", "[", 
+           RowBox[{"150", " ", "Degree"}], "]"}]}], ",", 
+         RowBox[{"b", " ", "w", " ", 
+          RowBox[{"AngleVector", "[", 
+           RowBox[{"60", " ", "Degree"}], "]"}]}], ",", 
+         RowBox[{"b", " ", "w", " ", 
+          RowBox[{"AngleVector", "[", 
+           RowBox[{"120", " ", "Degree"}], "]"}]}], ",", 
+         RowBox[{"a", " ", "w", " ", 
+          RowBox[{"AngleVector", "[", 
+           RowBox[{
+            RowBox[{"-", "150"}], " ", "Degree"}], "]"}]}], ",", 
+         RowBox[{"a", " ", "w", " ", 
+          RowBox[{"AngleVector", "[", 
+           RowBox[{
+            RowBox[{"-", "90"}], " ", "Degree"}], "]"}]}], ",", 
+         RowBox[{"b", " ", "w", " ", 
+          RowBox[{"AngleVector", "[", 
+           RowBox[{"180", " ", "Degree"}], "]"}]}], ",", 
+         RowBox[{"b", " ", "w", " ", 
+          RowBox[{"AngleVector", "[", 
+           RowBox[{
+            RowBox[{"-", "120"}], " ", "Degree"}], "]"}]}]}], "}"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"pts", "=", 
+       RowBox[{"FoldList", "[", 
+        RowBox[{"Plus", ",", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0"}], "}"}], ",", "steps"}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Graphics", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"EdgeForm", "[", "Black", "]"}], ",", 
+          RowBox[{"FaceForm", "[", "LightRed", "]"}], ",", 
+          RowBox[{"Polygon", "[", "pts", "]"}]}], "}"}], ",", 
+        RowBox[{"PlotRange", "->", "5"}], ",", 
+        RowBox[{"ImageSize", "->", "200"}]}], "]"}]}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "1", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"b", ",", "0", ",", 
+     RowBox[{"Sqrt", "[", "3", "]"}], ",", "0.3"}], "}"}]}], "]"}]}], "Input",\
+
+ CellChangeTimes->{{3.981816675632415*^9, 3.981816678199193*^9}, {
+  3.981816795900692*^9, 3.981816803371951*^9}, {3.981816891216773*^9, 
+  3.981816893461563*^9}, {3.981816936910132*^9, 3.981817006336802*^9}, {
+  3.9818171108223352`*^9, 3.981817118504986*^9}, {3.981817298590436*^9, 
+  3.981817327102947*^9}, {3.9818173580575542`*^9, 3.981817359918342*^9}},
+ CellLabel->"In[15]:=",ExpressionUUID->"f657ec5c-5536-4480-a3e2-579ae1adae43"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a$$ = 1, $CellContext`b$$ = 0., 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`a$$], 1, 1, ControlType -> Manipulator}, {
+      Hold[$CellContext`b$$], 0, 3^Rational[1, 2], 0.3, ControlType -> 
+      Manipulator}}, Typeset`size$$ = {
+    200., {97.134033203125, 102.865966796875}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = True, 
+    Typeset`keyframeActionsQ$$ = False, Typeset`keyframeList$$ = {}}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`a$$ = 1, $CellContext`b$$ = 0}, 
+      "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$, Typeset`keyframeActionsQ$$, 
+        Typeset`keyframeList$$}, "Body" :> 
+      Module[{$CellContext`steps$, $CellContext`pts$}, $CellContext`steps$ = \
+{(-$CellContext`a$$) $CellContext`w 
+           AngleVector[90 Degree], $CellContext`b$$ $CellContext`w 
+           AngleVector[0 Degree], $CellContext`b$$ $CellContext`w 
+           AngleVector[(-60) Degree], $CellContext`a$$ $CellContext`w 
+           AngleVector[30 Degree], 2 $CellContext`a$$ $CellContext`w 
+           AngleVector[90 Degree], $CellContext`a$$ $CellContext`w 
+           AngleVector[150 Degree], $CellContext`b$$ $CellContext`w 
+           AngleVector[60 Degree], $CellContext`b$$ $CellContext`w 
+           AngleVector[120 Degree], $CellContext`a$$ $CellContext`w 
+           AngleVector[(-150) Degree], $CellContext`a$$ $CellContext`w 
+           AngleVector[(-90) Degree], $CellContext`b$$ $CellContext`w 
+           AngleVector[180 Degree], $CellContext`b$$ $CellContext`w 
+           AngleVector[(-120) Degree]}; $CellContext`pts$ = 
+         FoldList[Plus, {0, 0}, $CellContext`steps$]; Graphics[{
+           EdgeForm[Black], 
+           FaceForm[LightRed], 
+           Polygon[$CellContext`pts$]}, PlotRange -> 5, ImageSize -> 200]], 
+      "Specifications" :> {{$CellContext`a$$, 1, 1}, {$CellContext`b$$, 0, 3^
+         Rational[1, 2], 0.3}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{
+      249.17531250000002`, {173.32445861816407`, 179.05639221191407`}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.981816938077121*^9, 3.981816967444955*^9}, 
+   3.981817036709395*^9, {3.981817115425887*^9, 3.9818171190002337`*^9}, {
+   3.981817305175845*^9, 3.981817360551115*^9}},
+ CellLabel->"Out[16]=",ExpressionUUID->"cb799b92-09e2-4c2f-b267-b5859c0d8afe"]
+}, Open  ]]
+},
+WindowSize->{808, 590},
+WindowMargins->{{4, Automatic}, {Automatic, 4}},
+FrontEndVersion->"14.3 for Mac OS X ARM (64-bit) (July 8, 2025)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"e88b36a1-1c44-48f9-9292-3f6ba15665bf"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[576, 22, 3352, 81, 213, "Input",ExpressionUUID->"f657ec5c-5536-4480-a3e2-579ae1adae43"],
+Cell[3931, 105, 3237, 58, 388, "Output",ExpressionUUID->"cb799b92-09e2-4c2f-b267-b5859c0d8afe"]
+}, Open  ]]
+}
+]
+*)
+
