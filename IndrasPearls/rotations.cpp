@@ -3,21 +3,25 @@
 #include <array>
 #include <cmath>
 #include <fstream>
+#include <random>
 
 using namespace std;
 
 int main()
 {
-    double x = 2.0;
+    double x = 1.5;
     double y = 0.0;
     double newx;
     double newy;
     double imageWidth = 2.0;
     double imageHeight = 2.0;
-    int iter = 29;
+    int iter = 23;
     double angle = 100 * sqrt(2) * M_PI / 180.0;
     double opacity = 1;
-
+    random_device rd;
+    mt19937 gen(rd());
+    uniform_real_distribution<double> dist(0.0, 45.0);
+    
     ofstream file("rotations.svg");
     file << "<svg xmlns=\"http://www.w3.org/2000/svg\" "
          << "viewBox=\"-3 -3 6 6 \">\n";
@@ -33,12 +37,10 @@ int main()
              << "width=\"" << imageWidth << "\" "
              << "height=\"" << imageHeight << "\" "
              << "opacity=\"" << opacity << "\" "
-             << "transform=\"rotate(" << i * angle * 180 / M_PI << " " << newx << " " << newy << ")\"/>\n";
+             << "transform=\"rotate(" << i * angle * 180 / M_PI + dist(gen) << " " << newx << " " << newy << ")\"/>\n";
     }
 
     file << "</g>\n";
     file << "</svg>\n";
-
-
     file.close();
 }
