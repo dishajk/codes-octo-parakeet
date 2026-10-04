@@ -7,11 +7,16 @@
 \usetikzlibrary{calc,lindenmayersystems}
 \usepackage{xcolor}
 \definecolor{pGreen}{HTML}{663366}
+\pgfdeclarelindenmayersystem{Dragon curve}{
+\symbol{X}{\pgflsystemdrawforward}
+\symbol{A}{\pgflsystemdrawforward}
+\symbol{+}{\pgflsystemturnright} % Explicitly define + and - symbols.
+\symbol{-}{\pgflsystemturnleft}
+\rule{A -> A+X}
+\rule{X -> A-X}
+}
 \begin{document}
 \begin{tikzpicture}
-\draw[pGreen, rotate=0]
-[l-system={rule set={F -> FF-[-F+F]+[+F-F]}, axiom=F, order=4, step=2pt,
-randomize step percent=25, angle=30, randomize angle percent=5}]
-lindenmayer system;
+      \draw[lindenmayer system={Dragon curve, step=20pt, axiom=A, order=10, angle=90},pGreen,line width=7pt] lindenmayer system;
 \end{tikzpicture}
 \end{document}
