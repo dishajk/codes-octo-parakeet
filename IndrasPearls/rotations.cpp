@@ -1,3 +1,5 @@
+// inkscape rotations.svg --export-type=png --export-width=2048 --export-background-opacity=0 --export-filename=rotations.png
+
 #include <array>
 #include <cmath>
 #include <fstream>
