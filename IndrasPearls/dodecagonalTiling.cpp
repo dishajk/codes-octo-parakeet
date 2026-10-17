@@ -61,12 +61,12 @@ int main()
     Vec2 genS = {imageWidth, sqrt(3) * imageWidth};
 
     Vec2 trans;
-    int kmax = 4;
-    int lmax = 4;
+    int kmax = 5;
+    int lmax = 5;
 
     ofstream file("dodecagonalTiling.svg");
     file << "<svg xmlns=\"http://www.w3.org/2000/svg\" "
-         << "viewBox=\"-3 -3 6 6 \">\n";
+         << "viewBox=\"-4 -4 8 8 \">\n";
 
     file << "<g transform=\"scale(1,-1)\">\n";
 
