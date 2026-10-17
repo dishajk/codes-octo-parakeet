@@ -1,0 +1,22 @@
+% inkscape dodecagonal-fr.pdf --export-type=png --export-filename=dodecagonal-fr.png --export-width=1024 --export-background-opacity=0
+% \documentclass[a3paper]{article}
+% \usepackage[left=0mm,top=1cm,right=0mm,bottom=0mm]{geometry}
+\documentclass[border=0]{standalone}
+% \documentclass[dvisvgm]{minimal}
+\usepackage{tikz}
+\usetikzlibrary{calc,lindenmayersystems}
+\usepackage{xcolor}
+\definecolor{pGreen}{HTML}{663366}
+\definecolor{pWine}{HTML}{a385a3}
+\definecolor{pBerry}{HTML}{e0d6e0}
+\begin{document}
+\begin{tikzpicture}
+    \filldraw[pGreen] (-30:1) -- (30:1) -- (90:1) -- (150:1) -- (-150:1) -- (-90:1);
+    \filldraw[pWine] (-30:1) --++(0:0.5) --++ (90:1) --++ (180:0.5);
+    \filldraw[pWine] (90:1) --++(120:0.5) --++ (-150:1) --++ (-60:0.5);
+    \filldraw[pWine] (-150:1) --++(-120:0.5) --++ (-30:1) --++ (60:0.5);
+    \filldraw[pBerry] (30:1) --++(0:0.5) --++ (90:{1/(2*tan(15))}) --++ (-150:{1/(2*tan(15))}) --++ (-60:0.5);
+    \filldraw[pBerry] (150:1) --++(120:0.5) --++ (-150:{1/(2*tan(15))}) --++ (-30:{1/(2*tan(15))}) --++ (60:0.5);
+    \filldraw[pBerry] (-90:1) --++(-120:0.5) --++ (-30:{1/(2*tan(15))}) --++ (90:{1/(2*tan(15))}) --++ (180:0.5);
+\end{tikzpicture}
+\end{document}
