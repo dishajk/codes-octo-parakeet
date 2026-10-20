@@ -90,8 +90,6 @@ int main()
         }
     }
     
- 
-
     file << "</g>\n";
     file << "</svg>\n";
     file.close();
