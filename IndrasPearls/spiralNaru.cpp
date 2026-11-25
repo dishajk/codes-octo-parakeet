@@ -20,7 +20,7 @@ int main(){
 
     ofstream file("spiralNaru.svg");
     file << "<svg xmlns=\"http://www.w3.org/2000/svg\" "
-         << "viewBox=\"0 -2 5 4 \">\n";
+         << "viewBox=\"-1 -2 7 4 \">\n";
     cout << a.real() << " " << a.imag() << "\n";
     file << "<g transform=\"scale(1,-1)\">\n";
     for (int k = 0; k < 10; k++)
