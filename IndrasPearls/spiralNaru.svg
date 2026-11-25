@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -2 5 4 ">
+<g transform="scale(1,-1)">
+<image href="naru.png" x="1.76924" y="-1.76777" width="3.53258" height="3.53553" opacity="1" transform="rotate(-180 3.53553 0)"/>
+<image href="naru.png" x="0.647786" y="0" width="1.76629" height="1.76777" opacity="1" transform="rotate(-150 1.53093 0.883883)"/>
+<image href="naru.png" x="0.000369414" y="0.323524" width="0.883145" height="0.883883" opacity="1" transform="rotate(-120 0.441942 0.765466)"/>
+<image href="naru.png" x="-0.220786" y="0.220971" width="0.441572" height="0.441942" opacity="1" transform="rotate(-90 -5.55112e-17 0.441942)"/>
+<image href="naru.png" x="-0.220879" y="0.080881" width="0.220786" height="0.220971" opacity="1" transform="rotate(-60 -0.110485 0.191366)"/>
+<image href="naru.png" x="-0.15088" y="-2.77556e-17" width="0.110393" height="0.110485" opacity="1" transform="rotate(-30 -0.0956832 0.0552427)"/>
+<image href="naru.png" x="-0.082841" y="-0.0276214" width="0.0551965" height="0.0552427" opacity="1" transform="rotate(-360 -0.0552427 -1.73472e-17)"/>
+<image href="naru.png" x="-0.0377199" y="-0.0276214" width="0.0275983" height="0.0276214" opacity="1" transform="rotate(-330 -0.0239208 -0.0138107)"/>
+<image href="naru.png" x="-0.0138049" y="-0.0188657" width="0.0137991" height="0.0138107" opacity="1" transform="rotate(-300 -0.00690534 -0.0119604)"/>
+<image href="naru.png" x="-0.00344978" y="-0.010358" width="0.00689957" height="0.00690534" opacity="1" transform="rotate(-270 2.1684e-18 -0.00690534)"/>
+</g>
+</svg>

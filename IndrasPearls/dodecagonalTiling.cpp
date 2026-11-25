@@ -43,7 +43,7 @@ array<double, N> operator+(const array<double, N>& a, double c)
 int main()
 {
     int width=1024;
-    int height=1182;
+    int height=3589;
 
     double imageHeight = 1.0;
     double imageWidth = imageHeight * width / height;
